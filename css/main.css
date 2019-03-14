@@ -1,0 +1,118 @@
+body {
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navbar .container {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+}
+
+.navbar-wrapper {
+    margin: 15px auto !important;
+    padding: 0 15px !important;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+.navbar a {
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    top: 0;
+}
+
+.three img {
+    border-radius: 50%;
+}
+
+.three {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.circle,
+.content,
+.carousel,
+.content-item {
+    margin-bottom: 150px;
+}
+
+/*照片变大*/
+.three:hover .circle-item {
+    -webkit-animation: Large 1s forwards;
+    -o-animation: Large 1s forwards;
+    animation: Large 1s forwards;
+}
+
+@keyframes Large {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+/*照片向右移动*/
+.content-item:hover .content-cat {
+    -webkit-animation: Move 1s forwards;
+    -o-animation: Move 1s forwards;
+    animation: Move 1s forwards;
+}
+
+@keyframes Move {
+    0% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    
+}
+
+footer {
+    padding: 10px 0;
+    background: tomato;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .form-group {
+        margin-left: 50px;
+    }
+}

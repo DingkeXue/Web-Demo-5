@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>咖啡猫</title>
+</head>
+<body>
+<!--导航栏-->
+<div class="navbar-wrapper">
+<nav class="navbar navbar-inverse navbar-fixed" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"><strong>咖啡猫</strong></a>
+        </div>
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">购买</a></li>
+                <li><a href="#">介绍</a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">联系 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">WeChat</a></li>
+                        <li class="divider"><a href="#"></a></li>
+                        <li><a href="#">QQ</a></li>
+                        <li class="divider"><a href="#"></a></li>
+                        <li><a href="#">Tel</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li title="已有账号" data-toggle="tooltip" data-placement="bottom" class="login"><a href="login.html">登录</a></li>
+                <li title="无账号" data-toggle="tooltip" data-placement="bottom" class="login"><a href="#">注册</a></li>
+            </ul>
+            <form class="navbar-form"  role="search">
+                <div class="form-group">
+                    <input type="text" placeholder="搜索" class="form-control">
+                    <button class="btn btn-primary form-control" type="submit">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+</div>
+<!--轮播-->
+<div class="carousel slide" id="Carousel" data-ride="carousel" data-pause="false">
+    <!--轮播指标-->
+    <ol class="carousel-indicators">
+        <li data-target="#Carousel" data-slide-to="0"></li>
+        <li data-target="#Carousel" data-slide-to="1"></li>
+        <li data-target="#Carousel" data-slide-to="2"></li>
+    </ol>
+    <!--轮播图片-->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/slide-04.jpg" alt="图片">
+        </div>
+        <div class="item">
+            <img src="img/slide-03.jpg" alt="图片">
+        </div>
+        <div class="item">
+            <img src="img/slide-02.jpg" alt="图片">
+        </div>
+    </div>
+    <!--轮播控制-->
+    <a href="#Carousel" class="carousel-control left" data-slide="prev" aria-hidden="true">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#Carousel" class="carousel-control right" data-slide="next" aria-hidden="true">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<div class="container">
+    <!--半圆图片-->
+    <div class="row circle">
+        <div class="col-md-4 three">
+            <img class="circle-item" src="img/three-01.jpg" alt="图片">
+            <h2>Heading</h2>
+            <p>
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            </p>
+            <button class="btn btn-primary">more</button>
+        </div>
+        <div class="col-md-4 three">
+            <img class="circle-item" src="img/three-02.jpg" alt="图片">
+            <h3>Heading</h3>
+            <p>
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            </p>
+            <button class="btn btn-primary">more</button>
+        </div>
+        <div class="col-md-4 three">
+            <img class="circle-item" src="img/three-03.jpg" alt="图片">
+            <h3>Heading</h3>
+            <p>
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            </p>
+            <button class="btn btn-primary">more</button>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="content">
+        <div class="row content-item">
+            <div class="col-md-7">
+                <a href="#"><h2>First featurette heading. It'll blow your mind.</h2></a>
+                <p>
+                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img  class="content-cat" src="img/content-01.jpg" alt="cat">
+            </div>
+        </div>
+        <div class="row content-item">
+            <div class="col-md-5">
+                <img class="content-cat" src="img/content-02.jpg" alt="cat">
+            </div>
+            <div class="col-md-7">
+                <a href="#"><h2>First featurette heading. It'll blow your mind.</h2></a>
+                <p>
+                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                </p>
+            </div>
+        </div>
+        <div class="row content-item">
+            <div class="col-md-7">
+                <a href="#"><h2>First featurette heading. It'll blow your mind.</h2></a>
+                <p>
+                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img  class="content-cat" src="img/content-03.jpg" alt="cat">
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <h3>咖啡猫，陪你度过每一天</h3>
+    <p>Bootstrap响应式设计，版权归@xue所有，如果侵权，请联系我！</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -14,10 +14,9 @@ body {
 }
 
 .navbar-wrapper {
-    margin: 15px auto !important;
     padding: 0 15px !important;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
